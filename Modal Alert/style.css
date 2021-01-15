@@ -1,0 +1,63 @@
+@keyframes fade {
+    from {
+         transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.modal {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+.modal-success {
+    margin: 140px auto;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.3);
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    animation-name: fade;
+    animation-duration: .8s;
+}
+
+.modal-body {
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+
+.modal-body img {
+    width: 120px;
+    border-radius: 50%;
+    margin: 40px auto;
+}
+
+.modal-text {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(29, 29, 29);
+}
+
+.modal-footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.modal-button {
+    width: 100px;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(23, 125, 172);
+    color: white;
+}
